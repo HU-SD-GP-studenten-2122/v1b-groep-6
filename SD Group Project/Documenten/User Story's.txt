@@ -1,0 +1,5 @@
+als docent, moet ik de presentie van de klas kunnen bijhouden, zodat ik weet wie er present is en wie er vaak niet is.
+
+als student, wil ik mijn aanwezigheid in kunnen zien, zodat ik weet of ik wel genoeg lesuren volg op school.
+als sudent, wil ik de mogelijkheid hebben om mij ziek te melden en naderhand weer beter te melden, zodat ik geen ongeoorloofde uren afwezen ben.
+
