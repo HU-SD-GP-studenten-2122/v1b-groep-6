@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="768.0" prefWidth="1337.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="GUI_Presentiesysteem.PresentieSchermController">
+   <children>
+      <HBox prefHeight="768.0" prefWidth="1305.0">
+         <children>
+            <AnchorPane prefHeight="453.0" prefWidth="154.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="768.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="153.0" />
+                  <Circle fill="WHITE" layoutX="79.0" layoutY="57.0" radius="43.0" stroke="WHITE" strokeType="INSIDE" />
+                  <ImageView fitHeight="56.0" fitWidth="69.0" layoutX="46.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Afbeeldingen/hu-logo.png" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+            <AnchorPane prefHeight="768.0" prefWidth="1190.0">
+               <children>
+                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="DODGERBLUE" height="75.0" layoutX="-31.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="1216.0" />
+                  <TableView fx:id="StudentenLijst" layoutX="31.0" layoutY="144.0" prefHeight="463.0" prefWidth="536.0">
+                    <columns>
+                      <TableColumn fx:id="naam" editable="false" prefWidth="153.0" text="Student" />
+                      <TableColumn fx:id="Studentnummer" editable="false" prefWidth="127.0" text="Studentnummer" />
+                        <TableColumn fx:id="Presentie" prefWidth="101.0" text="Presentie" />
+                        <TableColumn fx:id="reden" prefWidth="153.0" text="reden" />
+                    </columns>
+                  </TableView>
+                  <Label layoutX="7.0" layoutY="14.0" prefHeight="46.0" prefWidth="344.0" text="Presentie ingeven" textFill="WHITE">
+                     <font>
+                        <Font size="36.0" />
+                     </font>
+                  </Label>
+                  <Circle fill="#e1e1e1" layoutX="1145.0" layoutY="38.0" radius="26.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" />
+                  <ImageView fitHeight="56.0" fitWidth="46.0" layoutX="1122.0" layoutY="15.0" onMouseClicked="#keuzeszien" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Afbeeldingen/Profiel.png" />
+                     </image></ImageView>
+                  <Label layoutX="1031.0" layoutY="26.0" text="Ingelogd als:" textFill="WHITE" />
+                  <Label fx:id="Studentnaam" alignment="CENTER_RIGHT" layoutX="1031.0" layoutY="38.0" text="Gebruikersnaam" textFill="WHITE" />
+                  <Label fx:id="datumLabel" layoutX="31.0" layoutY="127.0" text="Datum:" />
+                  <ComboBox fx:id="klasKeuze" layoutX="29.0" layoutY="93.0" prefWidth="150.0" promptText="Kies een klas" />
+                  <Button fx:id="klaslijstOphalen" layoutX="196.0" layoutY="93.0" mnemonicParsing="false" onAction="#toonStudenten" text="Lijst ophalen" />
+                  <Button fx:id="indienButton" layoutX="514.0" layoutY="624.0" mnemonicParsing="false" onAction="#indienen" text="Indienen" />
+                  <Button fx:id="CancelButton" layoutX="446.0" layoutY="624.0" mnemonicParsing="false" onAction="#Terug" text="Terug" />
+                  <Button fx:id="accountKeuzesButton" layoutX="1016.0" layoutY="28.0" mnemonicParsing="false" onAction="#Uitloggen" prefHeight="25.0" prefWidth="98.0" text="Uitloggen" visible="false" />
+                  <ImageView fitHeight="572.0" fitWidth="490.0" layoutX="633.0" layoutY="136.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Afbeeldingen/huplaatje4.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </HBox>
+   </children>
+</AnchorPane>
